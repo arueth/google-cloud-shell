@@ -1,0 +1,1 @@
+export KUBECONFIG=${GOOGLE_CLOUD_PROJECT_DIR}/.kube/config
