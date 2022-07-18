@@ -6,7 +6,7 @@ SCRIPT_PATH="$(
 )"
 REPOSITORY_ROOT=${SCRIPT_PATH%/*}
 
-if grep 'PROJECT_DIR=${HOME}/projects/${DEVSHELL_PROJECT_ID}' ${HOME}/.bashrc &>/dev/null ; then
+if grep 'PROJECT_DIR=${HOME}/projects/${GOOGLE_CLOUD_PROJECT}' ${HOME}/.bashrc &>/dev/null ; then
     echo "bashrc addition has already been added to '${HOME}/.bashrc'"
 else
     echo "Appending '${REPOSITORY_ROOT}/templates/setup/bashrc_addition.sh' to '${HOME}/.bashrc'"

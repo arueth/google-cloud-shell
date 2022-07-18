@@ -6,12 +6,12 @@ SCRIPT_PATH="$(
 )"
 REPOSITORY_ROOT=${SCRIPT_PATH%/*}
 
-if [ -z ${DEVSHELL_PROJECT_ID} ]; then
-	echo "DEVSHELL_PROJECT_ID is not set, select a project before starting Cloud Shell or set the current project using gcloud config set project <PROJECT_ID>"
+if [ -z ${GOOGLE_CLOUD_PROJECT} ]; then
+	echo "GOOGLE_CLOUD_PROJECT is not set, select a project before starting Cloud Shell or set the current project using gcloud config set project <PROJECT_ID>"
 	exit -1
 fi
 
-PROJECT_DIR="${HOME}/projects/${DEVSHELL_PROJECT_ID}"
+PROJECT_DIR="${HOME}/projects/${GOOGLE_CLOUD_PROJECT}"
 if [ ! -d ${PROJECT_DIR} ]; then
 	echo "Creating project directory '${PROJECT_DIR}'"
 	mkdir -p ${PROJECT_DIR}

@@ -1,5 +1,5 @@
 
-PROJECT_DIR=${HOME}/projects/${DEVSHELL_PROJECT_ID}
+PROJECT_DIR=${HOME}/projects/${GOOGLE_CLOUD_PROJECT}
 if [ -d "${PROJECT_DIR}" ]; then
         echo "Changing to project directory: ${PROJECT_DIR}"
         cd ${PROJECT_DIR}

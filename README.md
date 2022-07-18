@@ -26,10 +26,10 @@ The `initial_setup.sh` script appends the [bashrc_addition.sh](templates/setup/b
 gcloud config set project <PROJECT_ID>
 ```
 
-1. Verify the `${DEVSHELL_PROJECT_ID}` is set
+1. Verify the `${GOOGLE_CLOUD_PROJECT}` is set
 
 ``` bash
-echo "DEVSHELL_PROJECT_ID=${DEVSHELL_PROJECT_ID}"
+echo "GOOGLE_CLOUD_PROJECT=${GOOGLE_CLOUD_PROJECT}"
 ```
 
 1. Run the `setup_new_project.sh` script
@@ -38,4 +38,4 @@ echo "DEVSHELL_PROJECT_ID=${DEVSHELL_PROJECT_ID}"
 ${HOME}/.google-cloud-shell/bin/setup_new_project.sh
 ```
 
-The `setup_new_project.sh` script creates a project directory(`${HOME}/projects/${DEVSHELL_PROJECT_ID}`) and copies the template files from the [templates/project](templates/project) folder to the project directory.
+The `setup_new_project.sh` script creates a project directory(`${HOME}/projects/${GOOGLE_CLOUD_PROJECT}`) and copies the template files from the [templates/project](templates/project) folder to the project directory.
